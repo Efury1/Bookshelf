@@ -7,8 +7,8 @@ class ThemeContextProvider extends React.Component {
     isDarkMode: true,
     dark: {
       bg: "#222222",
-      color: "rgba(239,83,80 ,1)",
-      hover: "rgba(239,83,80 ,0.8)"
+      color: "rgba(192,192,192, 1)",
+      hover: "rgba(192,192,192, 0.8)"
     },
     light: {
       bg: "#ecf0f1",
