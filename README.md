@@ -15,3 +15,11 @@ You may also see any lint errors in the console.
 
 ### About Application
 <a href="https://ibb.co/gWHcwNz"><img src="https://i.ibb.co/R6ZJPfz/Screen-Shot-2022-05-04-at-9-56-03-pm.png" alt="Screen-Shot-2022-05-04-at-9-56-03-pm" border="0"></a><br />
+
+# Tasks
+##To Do
+
+- [ ] Have multiple columns
+- [ ] Be able to favourite book
+- [ ] Have read and unread
+- [ ] Get light and dark button working
