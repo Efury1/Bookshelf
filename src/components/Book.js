@@ -16,7 +16,7 @@ export default class Book extends React.Component {
                 <a
                   className="portfolio-link"
                   data-toggle="modal"
-                  href="#portfolioModal1"
+                  href="#BookPortfolio1"
                 >
                   <div
                     className="portfolio-hover"

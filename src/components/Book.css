@@ -5,9 +5,9 @@
 }
 
 #portfolio .portfolio-item .portfolio-link {
-  position: relative;
+  position: absolute;
   display: block;
-  margin: 0 auto;
+  margin:  auto;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
