@@ -1,5 +1,9 @@
-.col-lg-4 col-sm-6 mb-4 {
-  
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
 
 .page-section {
@@ -16,7 +20,7 @@
     font-size: 2rem;
     font-weight: 50;
     font-style: italic;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Raleway", serif !important;
     margin-bottom: 4rem;
   }
   #portfolio .portfolio-item {
@@ -34,7 +38,7 @@
   #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     display: flex;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background: rgba(254, 209, 54, 0.9);
     align-items: center;
@@ -53,21 +57,21 @@
   }
 
   #portfolio .portfolio-item .portfolio-caption {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #fff;
+    padding: 1rem;
+    text-align: left;
+    background-color: ##424B54;
   }
 
   #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
     font-size: 1.5rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Raleway", serif !important;
     font-weight: 700;
     margin-bottom: 0;
   }
 
   #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-style: italic;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Raleway", serif !important;
   }
 
   .portfolio-modal .modal-dialog {
