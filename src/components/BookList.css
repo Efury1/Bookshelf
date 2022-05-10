@@ -1,5 +1,7 @@
 .page-section {
   padding: 6rem 0;
+  box-sizing: border-border-box;
+  font=family: 'Montserrat', sans-serif;
 }
 
 .page-section h2.section-heading {

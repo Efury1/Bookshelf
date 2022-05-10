@@ -8,7 +8,6 @@ export default class App extends React.Component {
       <ThemeContextProvider>
         <BookContextProvider>
           <BookList />
-        
         </BookContextProvider>
       </ThemeContextProvider>
     );

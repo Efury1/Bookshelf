@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 class Navbar extends Components {
   render() {
     <nav className="NavbarItems">
-      <h1  className="navbar-logo">Bookshelf</h1>
+      <h1  className="navbar-logo">Bookshelf<i className="fab fa-react"></i></h1>
       <h1 classname="menu-icon"></h1>
       <div> classname="menu-icon"></div>
       <ul>
