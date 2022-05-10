@@ -28,6 +28,7 @@ export default class BookList extends React.Component {
                     <div className="row">
                       {books.map((book, index) => {
                         return <Book book={book} key={index} />;
+
                       })}
                     </div>
                   </div>
