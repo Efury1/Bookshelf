@@ -13,6 +13,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+# `npm i bootstrap-reboot`
+
+# `npm i @emotion/css`
+Emotion is a library designed for writing css styles with Javascript.
+
 ### About Application
 <a href="https://ibb.co/gWHcwNz"><img src="https://i.ibb.co/R6ZJPfz/Screen-Shot-2022-05-04-at-9-56-03-pm.png" alt="Screen-Shot-2022-05-04-at-9-56-03-pm" border="0"></a><br />
 
