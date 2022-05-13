@@ -1,0 +1,10 @@
+.defaultClass{
+  width: 90px;
+  height: 80px;
+  border-radius: 50%; 
+  object-fit: fill;
+  border: 2px soild black;
+  padding: 1rem;
+  right: 0px;
+  position: absolute;
+}

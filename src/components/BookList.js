@@ -4,6 +4,7 @@ import { BookContext } from "../context/BookContext";
 import { ThemeContext } from "../context/ThemeContext";
 import "./index.css";
 import "./BookList.css";
+import Avatar from "./Avatar"
 
 export default class BookList extends React.Component {
   render() {
@@ -21,6 +22,7 @@ export default class BookList extends React.Component {
               return (
                 <section className="page-section" style={{ backgroundColor: theme.bg, color: theme.color }} id="portfolio">
                   <div className="container">
+                    <div><Avatar/></div>
                     <div className="text-right"><button className="btn btn-danger" onClick={changeColorTheme}>Change Mood</button></div>
                     <div className="text-center">
                       <h2 className="section-heading text-uppercase">My Book Folio</h2>
