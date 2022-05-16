@@ -6,7 +6,7 @@ const Avatar = ({className, src, alt, ...props}) => {
     <div>
     {src? (
       <img className={`defaultClass ${className}`}
-        src={src} 
+        src={src}
         alt={alt}
       />
     ) : (
