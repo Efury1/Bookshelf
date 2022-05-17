@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import {Logo} from '../Logo.js'
+import "../index.css"
 export default class Registration extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +27,8 @@ export default class Registration extends Component {
   render() {
     return (
       <div>
+        <h1 className="home">Registration</h1>
+        <Logo width="100" height="80"/>
         <form onSubmit={this.handleSubmit}></form>
         <input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
       </div>

@@ -121,3 +121,8 @@ body {
   .portfolio-modal .close-modal:hover {
     opacity: 0.3;
   }
+
+  .home {
+    font-size: 5rem;
+    color: white;
+  }
