@@ -24,6 +24,9 @@ Emotion is a library designed for writing css styles with Javascript.
 # Tasks
 ## To Do
 
+- [ ] Login Page
+- [ ] Sign up page
+- [ ] Avatar with dropdown menu
 - [ ] Have multiple columns
 - [ ] Be able to favourite book
 - [ ] Have read and unread
