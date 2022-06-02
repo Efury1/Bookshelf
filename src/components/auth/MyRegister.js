@@ -21,13 +21,13 @@ export default function App() {
 
   return (
     <div style={{}}>
-      <h4>Login</h4>
+      <h4>Register</h4>
       <Button variant="outlined" color="primary"
               onClick={handleClickToOpen}>
-        Login
+        Register
       </Button>
       <Dialog open={open} onClose={handleToClose}>
-        <DialogTitle>{"Want to see your books?"}</DialogTitle>
+        <DialogTitle>{"Let's get setup"}</DialogTitle>
         <DialogContent>
           <DialogContentText>
             <form>
@@ -48,7 +48,7 @@ export default function App() {
         </DialogContent>
        <DialogActions>
          <Button onClick={handleToClose} color="primary" autoFocus>
-           Login
+           Register
          </Button>
          <Button onClick={handleToClose} color="primary" autoFocus>
            Close
