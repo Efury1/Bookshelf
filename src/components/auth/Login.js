@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 import {Logo} from '../Logo'
+import MyDialog from './MyDialog.js'
 
 export default class Login extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Login extends Component {
       <h1 className="home">Welcome to bookie</h1>
       <Logo width="100" height="100"/>
       <div>
-        <button onClick={() => alert('login clicked')}>Login</button>
+        <MyDialog />
       </div>
       <div>
         <button onClick={() => alert('login clicked')}> Register</button>
