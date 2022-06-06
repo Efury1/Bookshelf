@@ -11,7 +11,8 @@ export default function App() {
 
   const [open, setOpen] = React.useState(false);
   const [inputValue, setInputValue] = React.useState("");
-  const handleClickToOpen = () => {
+
+  const setOpenModal = () => {
     setOpen(true);
   };
 
@@ -21,38 +22,30 @@ export default function App() {
 
   return (
     <div style={{}}>
-      <h4>Register</h4>
-      <Button variant="outlined" color="primary"
-              onClick={handleClickToOpen}>
-        Register
-      </Button>
+      <button onClick={() => setOpenModal('register')}>Register</button>
       <Dialog open={open} onClose={handleToClose}>
-        <DialogTitle>{"Let's get setup"}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <form>
-              <div>
+          <div className="login-wrapper">
+            <h1>Please Log In</h1>
+              <form>
                 <label>
-                  Username:
-                  <input type="username" username="username"/>
+                  <p>Username</p>
+                    <input type="text" />
                 </label>
-              </div>
-              <div>
                 <label>
-                  Password:
-                  <input type="password" username="password"/>
+                  <p>Password</p>
+                  <input type="password" />
                 </label>
-              </div>
             </form>
+          </div>
           </DialogContentText>
         </DialogContent>
        <DialogActions>
          <Button onClick={handleToClose} color="primary" autoFocus>
-           Register
+           Login
          </Button>
-         <Button onClick={handleToClose} color="primary" autoFocus>
-           Close
-         </Button>
+         <button onClick={() => setOpenModal('none')}>Close</button>
        </DialogActions>
      </Dialog>
    </div>

@@ -11,7 +11,9 @@ export default function App() {
 
   const [open, setOpen] = React.useState(false);
   const [inputValue, setInputValue] = React.useState("");
-  const handleClickToOpen = () => {
+
+
+  const setOpenModal = () => {
     setOpen(true);
   };
 
@@ -20,39 +22,33 @@ export default function App() {
   };
 
   return (
-    <div style={{}}>
-      <h4>Login</h4>
-      <Button variant="outlined" color="primary"
-              onClick={handleClickToOpen}>
-        Login
-      </Button>
-      <Dialog open={open} onClose={handleToClose}>
-        <DialogContent>
-          <DialogContentText>
-          <div className="login-wrapper">
-            <h1>Please Log In</h1>
-              <form>
-                <label>
-                  <p>Username</p>
-                    <input type="text" />
-                </label>
-                <label>
-                  <p>Password</p>
-                  <input type="password" />
-                </label>
-            </form>
-          </div>
-          </DialogContentText>
-        </DialogContent>
-       <DialogActions>
-         <Button onClick={handleToClose} color="primary" autoFocus>
-           Login
-         </Button>
-         <Button onClick={handleToClose} color="primary" autoFocus>
-           Close
-         </Button>
-       </DialogActions>
-     </Dialog>
-   </div>
+      <div style={{}}>
+        <button onClick={() => setOpenModal('login')}>Login</button>
+        <Dialog open={open} onClose={handleToClose}>
+          <DialogContent>
+            <DialogContentText>
+            <div className="login-wrapper">
+              <h1>Please Log In</h1>
+                <form>
+                  <label>
+                    <p>Username</p>
+                      <input type="text" />
+                  </label>
+                  <label>
+                    <p>Password</p>
+                    <input type="password" />
+                  </label>
+              </form>
+            </div>
+            </DialogContentText>
+          </DialogContent>
+         <DialogActions>
+           <Button onClick={handleToClose} color="primary" autoFocus>
+             Login
+           </Button>
+           <button onClick={() => setOpenModal('none')}>Close</button>
+         </DialogActions>
+       </Dialog>
+     </div>
  );
 }
