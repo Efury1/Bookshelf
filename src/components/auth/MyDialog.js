@@ -27,23 +27,21 @@ export default function App() {
         Login
       </Button>
       <Dialog open={open} onClose={handleToClose}>
-        <DialogTitle>{"Want to see your books?"}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <form>
-              <div>
+          <div className="login-wrapper">
+            <h1>Please Log In</h1>
+              <form>
                 <label>
-                  Username:
-                  <input type="username" username="username"/>
+                  <p>Username</p>
+                    <input type="text" />
                 </label>
-              </div>
-              <div>
                 <label>
-                  Password:
-                  <input type="password" username="password"/>
+                  <p>Password</p>
+                  <input type="password" />
                 </label>
-              </div>
             </form>
+          </div>
           </DialogContentText>
         </DialogContent>
        <DialogActions>
