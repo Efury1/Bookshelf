@@ -19,7 +19,7 @@ const Button = styled.button (
     border: '10',
     lineHeight: '1',
     borderRadius: '3px',
-    borderColor: '#fcbacb',
+    borderColor: '#352A21',
     margin: 5,
   }
 )
@@ -27,7 +27,7 @@ const Button = styled.button (
 const Input = styled.input({
   borderRadius: '3px',
   border: '1px solid #f1f2f7',
-  background: '#fcbacb',
+  background: '#b2d3c2',
   padding: '8px 12px',
 })
 
