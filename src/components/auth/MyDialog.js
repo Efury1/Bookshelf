@@ -31,7 +31,7 @@ function LoginForm({onSubmit, buttonText}) {
       <Input id="password" type="password"/>
     </FormGroup>
     <div>
-      <button type="submit">{buttonText}</button>
+      <Button type="submit">{buttonText}</Button>
     </div>
   </form>
 
@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     <div style={{}}>
-      <button onClick={() => setOpenModal('login')}>Login</button>
+      <Button onClick={() => setOpenModal('login')}>Login</Button>
       <Dialog open={openModal === 'login'}>
         <DialogContent>
           <DialogContentText>
@@ -60,7 +60,7 @@ export default function App() {
           </DialogContentText>
         </DialogContent>
        <DialogActions>
-         <button onClick={() => setOpenModal('none') === 'login'}>Close</button>
+         <Button onClick={() => setOpenModal('none') === 'login'}>Close</Button>
        </DialogActions>
      </Dialog>
    </div>

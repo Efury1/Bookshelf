@@ -1,3 +1,6 @@
+
+
+//import {jsx} from '@emotion/core'
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContentText from "@material-ui/core/DialogContentText";
@@ -24,7 +27,7 @@ function LoginForm({onSubmit, buttonText}) {
 
   return(
     <form onSubmit={handleSubmit}>
-    <h1>Register</h1>
+    <h1>Login</h1>
     <FormGroup>
       <label htmlFor="username">Username</label>
       <Input id="username" type="text"/>
@@ -34,7 +37,7 @@ function LoginForm({onSubmit, buttonText}) {
       <Input id="password" type="password"/>
     </FormGroup>
     <div>
-      <button type="submit">{buttonText}</button>
+      <Button type="submit">{buttonText}</Button>
     </div>
   </form>
 
@@ -44,8 +47,8 @@ function LoginForm({onSubmit, buttonText}) {
 //Comment
 export default function App() {
 
-  function register(formData) {
-    console.log('register', formData)
+  function login(formData) {
+    console.log('login', formData)
   }
 
   const [openModal, setOpenModal] = React.useState('none');
@@ -53,17 +56,17 @@ export default function App() {
 
   return (
     <div style={{}}>
-      <button onClick={() => setOpenModal('register')}>Register</button>
+      <Button onClick={() => setOpenModal('register')}>Register</Button>
       <Dialog open={openModal === 'register'}>
         <DialogContent>
           <DialogContentText>
           <div className="login-wrapper">
-            <LoginForm onSubmit={register} buttonText="Register"></LoginForm>
+            <LoginForm onSubmit={login} buttonText="register"></LoginForm>
           </div>
           </DialogContentText>
         </DialogContent>
        <DialogActions>
-         <button onClick={() => setOpenModal('none') === 'register'}>Close</button>
+         <Button onClick={() => setOpenModal('none') === 'register'}>Close</Button>
        </DialogActions>
      </Dialog>
    </div>

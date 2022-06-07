@@ -16,17 +16,19 @@ const buttonVariants = {
 const Button = styled.button (
   {
     padding: '10px 15px',
-    border: '0',
+    border: '10',
     lineHeight: '1',
     borderRadius: '3px',
+    borderColor: '#fcbacb',
+    margin: 5,
   }
 )
 
 const Input = styled.input({
   borderRadius: '3px',
   border: '1px solid #f1f2f7',
-  background: '#f1f2f7',
-  paddign: '8px 12px'
+  background: '#fcbacb',
+  padding: '8px 12px',
 })
 
 const FormGroup = styled.div({
