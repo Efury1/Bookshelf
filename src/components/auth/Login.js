@@ -4,6 +4,27 @@ import ReactDOM from 'react-dom'
 import MyDialog from './MyDialog.js'
 import MyRegister from './MyRegister.js'
 
+
+function LoginForm({onSubmit, buttonText}) {
+  function handleSubmit(event) {
+    event.preventDefault()
+  }
+
+  return(
+    <form onSubmit={handleSubmit}>
+    <div>
+      <label>Username</label>
+      <input id="username" type="text"/>
+    </div>
+      <label>Password</label>
+      <input id="password" type="password"/>
+    <div>
+      <button type="submit">{buttonText}></button>
+    </div>
+  </form>
+  )
+}
+
 export default class Login extends Component {
   render() {
   return (
