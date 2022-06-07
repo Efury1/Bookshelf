@@ -7,18 +7,41 @@ import DialogContent from "@material-ui/core/DialogContent";
 import Button from "@material-ui/core/Button";
 
 
+function LoginForm({onSubmit, buttonText}) {
+  function handleSubmit(event) {
+    event.preventDefault()
+    const {username, password} = event.target.elements
+    onSubmit({
+      username: username.value,
+      password: password.value,
+    })
+  }
+
+  return(
+    <form onSubmit={handleSubmit}>
+    <h1>Register</h1>
+    <div>
+      <label>Username</label>
+      <input id="username" type="text"/>
+    </div>
+      <label>Password</label>
+      <input id="password" type="password"/>
+    <div>
+      <button type="submit">{buttonText}</button>
+    </div>
+  </form>
+  )
+}
+
+//Comment
 export default function App() {
+
+  function register(formData) {
+    console.log('register', formData)
+  }
 
   const [openModal, setOpenModal] = React.useState('none');
   const [inputValue, setInputValue] = React.useState("");
-
-  /*const setOpenModal = () => {
-    setOpen(true);
-  };*/
-
-  const handleToClose = () => {
-    setOpenModal(false);
-  };
 
   return (
     <div style={{}}>
@@ -27,22 +50,11 @@ export default function App() {
         <DialogContent>
           <DialogContentText>
           <div className="login-wrapper">
-            <h1>Register</h1>
-              <form>
-                <label>
-                  <p>Username</p>
-                    <input type="text" />
-                </label>
-                <label>
-                  <p>Password</p>
-                  <input type="password" />
-                </label>
-            </form>
+            <LoginForm onSubmit={register} buttonText="Register"></LoginForm>
           </div>
           </DialogContentText>
         </DialogContent>
        <DialogActions>
-         <button onClick={() => setOpenModal('none') === 'register'}>Login</button>
          <button onClick={() => setOpenModal('none') === 'register'}>Close</button>
        </DialogActions>
      </Dialog>
