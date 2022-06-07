@@ -22,16 +22,19 @@ function LoginForm({onSubmit, buttonText}) {
   return(
     <form onSubmit={handleSubmit}>
     <h1>Login</h1>
-    <div>
-      <label>Username</label>
-      <input id="username" type="text"/>
-    </div>
-      <label>Password</label>
-      <input id="password" type="password"/>
+    <FormGroup>
+      <label htmlFor="username">Username</label>
+      <Input id="username" type="text"/>
+    </FormGroup>
+    <FormGroup>
+      <label htmlFor="password">Password</label>
+      <Input id="password" type="password"/>
+    </FormGroup>
     <div>
       <button type="submit">{buttonText}</button>
     </div>
   </form>
+
   )
 }
 

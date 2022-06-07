@@ -48,4 +48,4 @@ const FormGroup = styled.div({
 )
 
 
-export {Button, CircleButton, FormGroup}
+export {Button, CircleButton, FormGroup, Input}
