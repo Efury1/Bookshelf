@@ -31,3 +31,4 @@ Emotion is a library designed for writing css styles with Javascript.
 - [ ] Be able to favourite book
 - [ ] Have read and unread
 - [ ] Get light and dark button working
+- [ ] Book reading counter
