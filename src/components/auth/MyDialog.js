@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     <div style={{}}>
-      <Button onClick={() => setOpenModal('login')}>Login</button>
+      <Button onClick={() => setOpenModal('login')}>Login</Button>
       <Dialog open={openModal === 'login'}>
         <DialogContent>
           <DialogContentText>
