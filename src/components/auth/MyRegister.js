@@ -7,6 +7,11 @@ import DialogContent from "@material-ui/core/DialogContent";
 
 
 
+import theme from "../styles/theme.js";
+import {Button, Input, FormGroup} from '../styles/theme'
+//import Button from "@material-ui/core/Button";
+
+
 function LoginForm({onSubmit, buttonText}) {
   function handleSubmit(event) {
     event.preventDefault()
@@ -20,16 +25,19 @@ function LoginForm({onSubmit, buttonText}) {
   return(
     <form onSubmit={handleSubmit}>
     <h1>Register</h1>
-    <div>
-      <label>Username</label>
-      <input id="username" type="text"/>
-    </div>
-      <label>Password</label>
-      <input id="password" type="password"/>
+    <FormGroup>
+      <label htmlFor="username">Username</label>
+      <Input id="username" type="text"/>
+    </FormGroup>
+    <FormGroup>
+      <label htmlFor="password">Password</label>
+      <Input id="password" type="password"/>
+    </FormGroup>
     <div>
       <button type="submit">{buttonText}</button>
     </div>
   </form>
+
   )
 }
 
