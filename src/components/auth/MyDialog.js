@@ -4,51 +4,65 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-import Button from "@material-ui/core/Button";
+import theme from "../styles/theme.js";
+import {Button, Input, FormGroup} from '../styles/theme'
+//import Button from "@material-ui/core/Button";
+
+
+function LoginForm({onSubmit, buttonText}) {
+  function handleSubmit(event) {
+    event.preventDefault()
+    const {username, password} = event.target.elements
+    onSubmit({
+      username: username.value,
+      password: password.value,
+    })
+  }
+
+  return(
+    <form onSubmit={handleSubmit}>
+    <h1>Login</h1>
+    <FormGroup>
+      <label htmlFor="username">Username</label>
+      <Input id="username" type="text"/>
+    </FormGroup>
+    <FormGroup>
+      <label htmlFor="password">Password</label>
+      <Input id="password" type="password"/>
+    </FormGroup>
+    <div>
+      <Button type="submit">{buttonText}</Button>
+    </div>
+  </form>
+
+  )
+}
 
 //Comment
 export default function App() {
 
-  const [open, setOpen] = React.useState(false);
+  function login(formData) {
+    console.log('login', formData)
+  }
+
+  const [openModal, setOpenModal] = React.useState('none');
   const [inputValue, setInputValue] = React.useState("");
 
-
-  const setOpenModal = () => {
-    setOpen(true);
-  };
-
-  const handleToClose = () => {
-    setOpen(false);
-  };
-
   return (
-      <div style={{}}>
-        <button onClick={() => setOpenModal('login')}>Login</button>
-        <Dialog open={open} onClose={handleToClose}>
-          <DialogContent>
-            <DialogContentText>
-            <div className="login-wrapper">
-              <h1>Please Log In</h1>
-                <form>
-                  <label>
-                    <p>Username</p>
-                      <input type="text" />
-                  </label>
-                  <label>
-                    <p>Password</p>
-                    <input type="password" />
-                  </label>
-              </form>
-            </div>
-            </DialogContentText>
-          </DialogContent>
-         <DialogActions>
-           <Button onClick={handleToClose} color="primary" autoFocus>
-             Login
-           </Button>
-           <button onClick={() => setOpenModal('none')}>Close</button>
-         </DialogActions>
-       </Dialog>
-     </div>
+    <div style={{}}>
+      <Button onClick={() => setOpenModal('login')}>Login</Button>
+      <Dialog open={openModal === 'login'}>
+        <DialogContent>
+          <DialogContentText>
+          <div className="login-wrapper">
+            <LoginForm onSubmit={login} buttonText="Login"></LoginForm>
+          </div>
+          </DialogContentText>
+        </DialogContent>
+       <DialogActions>
+         <Button onClick={() => setOpenModal('none') === 'login'}>Close</Button>
+       </DialogActions>
+     </Dialog>
+   </div>
  );
 }
