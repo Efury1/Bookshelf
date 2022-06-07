@@ -23,11 +23,11 @@ export default function App() {
   return (
     <div style={{}}>
       <button onClick={() => setOpenModal('register')}>Register</button>
-      <Dialog open={openModal} onClose={handleToClose}>
+      <Dialog open={openModal === 'register'}>
         <DialogContent>
           <DialogContentText>
           <div className="login-wrapper">
-            <h1>Please Log In</h1>
+            <h1>Register</h1>
               <form>
                 <label>
                   <p>Username</p>
@@ -42,10 +42,8 @@ export default function App() {
           </DialogContentText>
         </DialogContent>
        <DialogActions>
-         <Button onClick={handleToClose} color="primary" autoFocus>
-           Login
-         </Button>
-         <button onClick={() => setOpenModal('none')}>Close</button>
+         <button onClick={() => setOpenModal('none') === 'register'}>Login</button>
+         <button onClick={() => setOpenModal('none') === 'register'}>Close</button>
        </DialogActions>
      </Dialog>
    </div>
