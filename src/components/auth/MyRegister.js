@@ -9,21 +9,21 @@ import Button from "@material-ui/core/Button";
 
 export default function App() {
 
-  const [open, setOpen] = React.useState(false);
+  const [openModal, setOpenModal] = React.useState('none');
   const [inputValue, setInputValue] = React.useState("");
 
-  const setOpenModal = () => {
+  /*const setOpenModal = () => {
     setOpen(true);
-  };
+  };*/
 
   const handleToClose = () => {
-    setOpen(false);
+    setOpenModal(false);
   };
 
   return (
     <div style={{}}>
       <button onClick={() => setOpenModal('register')}>Register</button>
-      <Dialog open={open} onClose={handleToClose}>
+      <Dialog open={openModal} onClose={handleToClose}>
         <DialogContent>
           <DialogContentText>
           <div className="login-wrapper">
