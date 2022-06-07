@@ -15,7 +15,7 @@ const buttonVariants = {
 
 const Button = styled.button (
   {
-    padding: '10px 15px',
+    padding: '10px',
     border: '10',
     lineHeight: '1',
     borderRadius: '3px',
