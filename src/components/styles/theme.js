@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled/macro'
-//import * as colors from 'styles/colors.js'
+import * as colors from './colors.js'
 
-const buttonVariants = {
+
+export const buttonVariants = {
   primary: {
     background: '#3f51b5',
     color: 'white',
@@ -15,13 +16,13 @@ const buttonVariants = {
 
 const Button = styled.button (
   {
-    padding: '10px',
-    border: '10',
+    padding: '10px 15px',
+    border: `1px soild ${colors.gray}`,
     lineHeight: '1',
     borderRadius: '3px',
-    borderColor: '#352A21',
     margin: 5,
   }
+  //({variant = 'primary'}) => buttonVariants[variant],
 )
 
 const Input = styled.input({
@@ -46,6 +47,7 @@ const FormGroup = styled.div({
   alignItems: 'center',
   justifyContext: 'center',
   border: '1px soild grey',
+  cursor: 'pointer',
   }
 )
 
