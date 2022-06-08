@@ -1,8 +1,22 @@
 import React from 'react';
 import styled from '@emotion/styled/macro'
-//import * as colors from 'styles/colors.js'
+import * as colors from './colors.js'
+/*import {FaSpinner} from 'react-icons/fa'
 
-const buttonVariants = {
+const spin = keyframes({
+  '0%': {transform: 'rotate(0deg)'},
+  '100%': {transform: 'rotate(360deg)'}
+})
+
+const Spinner = styled(FaSpinner)({
+  animation: `spin 1s linear infinite`
+})
+Spinner.defaultProps = {
+  'aria-label': 'loading',
+}*/
+
+
+export const buttonVariants = {
   primary: {
     background: '#3f51b5',
     color: 'white',
@@ -15,13 +29,13 @@ const buttonVariants = {
 
 const Button = styled.button (
   {
-    padding: '10px',
-    border: '10',
+    padding: '10px 15px',
+    border: `1px soild ${colors.gray}`,
     lineHeight: '1',
     borderRadius: '3px',
-    borderColor: '#352A21',
     margin: 5,
   }
+  //({variant = 'primary'}) => buttonVariants[variant],
 )
 
 const Input = styled.input({
@@ -46,6 +60,7 @@ const FormGroup = styled.div({
   alignItems: 'center',
   justifyContext: 'center',
   border: '1px soild grey',
+  cursor: 'pointer',
   }
 )
 

@@ -6,17 +6,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+`npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-# `npm i bootstrap-reboot`
+`npm i bootstrap-reboot`
 
-# `npm i @emotion/css`
+`npm i @emotion/css`
 Emotion is a library designed for writing css styles with Javascript.
+
+`npm install react-icons --save`
+Icon package
 
 ### About Application
 

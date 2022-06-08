@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import MyDialog from './MyDialog.js'
 import MyRegister from './MyRegister.js'
+import {Background} from '../styles/theme'
 import book from './book.jpeg'
 
 
