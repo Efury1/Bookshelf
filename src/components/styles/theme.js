@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled/macro'
 import * as colors from './colors.js'
-/*import {FaSpinner} from 'react-icons/fa'
+/*
+import {keyframes} from '@emotion/core'
+import {FaSpinner} from 'react-icons/fa'
 
 const spin = keyframes({
   '0%': {transform: 'rotate(0deg)'},
