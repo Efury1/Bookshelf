@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled from '@emotion/styled/macro'
 import * as colors from './colors.js'
 /*

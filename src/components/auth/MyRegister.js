@@ -6,11 +6,6 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-
-
-
-
-import theme from "../styles/theme.js";
 import {Button, Input, FormGroup} from '../styles/theme'
 //import Button from "@material-ui/core/Button";
 
@@ -52,7 +47,7 @@ export default function App() {
   }
 
   const [openModal, setOpenModal] = React.useState('none');
-  const [inputValue, setInputValue] = React.useState("");
+  //const [inputValue, setInputValue] = React.useState("");
 
   return (
     <div style={{}}>

@@ -1,12 +1,9 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-import theme from "../styles/theme.js";
-import {Button, Input, FormGroup, Body} from '../styles/theme'
-//import Button from "@material-ui/core/Button";
+import {Button, Input, FormGroup} from '../styles/theme';
 
 
 function LoginForm({onSubmit, buttonText}) {
@@ -46,7 +43,7 @@ export default function App() {
   }
 
   const [openModal, setOpenModal] = React.useState('none');
-  const [inputValue, setInputValue] = React.useState("");
+  //const [inputValue, setInputValue] = React.useState("");
 
   return (
     <div style={{}}>
